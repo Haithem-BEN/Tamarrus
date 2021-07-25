@@ -797,7 +797,7 @@ main .projects__cards .shom-more {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background: url("../../images/more-bg.png");
+  background: url("../../images/show-more-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
