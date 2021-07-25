@@ -1,0 +1,335 @@
+main{
+    .hero{
+        height: 850px;
+        color: white;
+        background: url('../../images/bg-rev-1.svg');
+        background-repeat: no-repeat;
+        background-size: 1500px;
+        background-position: 100% -1px;
+        
+
+        @include breakpoint-down(xlarge){
+            height: 700px;
+            background-size: 1280px;
+        }
+        @include breakpoint-down(meduim){
+            text-align: center;
+            height: 590px;
+            background-size: 1870px;
+            background-position: 100% -436px;
+        }
+        @include breakpoint-down(xsmall){
+            height: 510px;
+            background-position: 100% -536px;
+        }
+        
+        &__img{
+            overflow: hidden;
+            img{
+                width: 800px;
+                position: relative;
+                top: 143px;
+                right: 1120px;
+                z-index: -1;
+                @include breakpoint-down(meduim){
+                    display: none;
+                }
+                @include breakpoint-down(xlarge){
+                    top: 100px;
+                    right: 920px;
+                }
+            }
+        }
+        &__text{
+            position: relative;
+            text-align: right;
+            top: -160px;
+            @include breakpoint-down(xlarge){
+                top: -215px;
+            }
+            @include breakpoint-down(meduim){
+                top: 160px;
+                max-width: 480px;
+                text-align: center;
+            }
+            @include breakpoint-down(xsmall){
+                top: 130px;
+                max-width:324px;
+            }
+            h1{
+                font-size: 4.1rem;
+                font-weight: 800;
+                margin-bottom: 40px;
+                word-wrap: break-word;
+                @include breakpoint-down(xsmall){
+                    font-size: 2.85rem;
+                }
+            }
+            h2{
+                font-size: 2.4rem;
+                font-weight: 100;
+                margin-bottom: 10px;
+
+                @include breakpoint-down(xsmall){
+                    font-size: 1.65rem;
+                }
+            }
+            p{
+                max-width: 470px;
+                margin-bottom: 35px;
+                line-height: 1.45rem;
+
+                @include breakpoint-down(xsmall){
+                    font-size: 1rem;
+                }
+            }
+            .button{
+                // min-width: 100%;
+                background: #fff ;
+                color: #544ae2;
+            }
+        }
+    }
+    section {
+        margin-bottom: 40px;
+        .sub-title{
+            color: #ff5940;
+            margin-bottom: 7px;
+            font-weight: 400;
+            font-size: 1.7rem;
+            @include breakpoint-down(large){
+                font-size: 1.3rem;
+            }
+        }
+        .main-title{
+            margin-bottom: 30px;
+            font-size: 3rem;
+            @include breakpoint-down(large){
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+            }
+        }
+        .description{
+            color: #87878a;
+            max-width: 460px;
+            @include breakpoint-down(large){
+                font-size: 1rem;
+            }
+        }      
+    }
+    
+    .features{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        top: -80px;
+
+        @include breakpoint-down(meduim){
+            top: 0;
+        }
+        @include breakpoint-down(large){
+            flex-direction: column;
+        }
+        
+        &__header{
+            flex: 1;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: left;
+            padding: 0 30px;
+
+            @include breakpoint-down(large){
+                align-items: center;
+                text-align:center;
+                margin: 20px 0;
+            }
+            
+            .btns{
+                margin-top: 30px;
+                @include breakpoint-down(large){
+                    display: none;
+                }
+                .button{
+                    width: max-content;
+                    background-color: #38383d;
+                    color: #fff;
+                }
+            }
+        }
+        &__cards{
+            height: auto;
+            flex: 1;
+            padding: 0 30px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-content: baseline;
+
+            overflow: hidden;
+
+            @include breakpoint-down(meduim){
+                justify-content: center;
+            }
+            @include breakpoint-down(small){
+                padding: 0;
+            }
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                max-width: 200px;
+                margin: 15px;
+
+                @include breakpoint-down(large){
+                    // max-width: 191px;
+                    align-items: center;
+                    text-align: center;
+                    margin: 15px 10px;
+                }
+                @include breakpoint-down(xsmall){
+                    max-width: 250px;
+                }
+                i{
+                    color: #4b52e4;
+                    color: #ff5940;
+                    font-size: 2.3rem ;
+                    margin-bottom: 12px;
+                }
+                h4{
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 1rem;
+                    color: #87878a;
+                }
+            }
+        }
+    }
+    .projects{
+        &__header{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        &__cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .card{
+                width: 380px;
+                // max-width: 380px !important;
+                height: 450px;
+                margin: 15px;
+                box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;
+                // box-shadow: rgba(17, 12, 46, 0.15) 0px 10px 30px 0px;
+                // box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                // box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+                // box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+                
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                overflow: hidden;
+                @include breakpoint-down(xlarge){
+                    width: 359px;
+                }
+                
+                &__img{
+                    align-self: center;
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                &__content{
+                    padding: 5px 15px;
+                    .project-details{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 0.9rem;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                        .languages-list{
+                            display: flex;
+                            li{
+                                margin: 0 5px;
+                            }
+                            .html{
+                                color: #ff5940;
+                            }
+                            .css{
+                                color: #3678e0;
+                            }
+                            .js{
+                                color: #f59d15;
+                            }
+                            .react{
+                                color: #59cdee;
+                            }
+                        }
+                        .lvl{
+                            font-weight: 700;
+                            // background: #ff5940;
+                            color: #ff5940;
+                            padding: 5px 10px;
+                            // border: solid 1px #ff5940;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+                &__title{
+                    margin-bottom: 15px;
+                    font-size: 1.3rem;
+                }
+                &__description{
+                    height: 60px;
+                    font-size: 1rem;
+                    overflow: hidden;
+                }
+
+            }
+            .shom-more{
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background: url("../../images/more-bg.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top center ;
+                .overlay{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    background: #4b52e4;
+                    opacity: 0.9;
+                }
+                .content{
+                    display: flex;
+                    z-index: 2;
+                    h3{
+                        font-weight: 900;
+                        margin-left: 20px;
+                    }
+                    i{
+                        font-size: 1.5rem;
+                        margin: 4px -1px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@keyframes gravity-effect {
+    0%{
+        transform: translateX(0) translateY(0)  ;
+    }
+    25%{
+        transform:   translateY(-2px) rotate(0.1deg);
+    }
+    50%{
+        transform:  translateY(-2px) rotateY(0deg);
+    }
+    75%{
+        transform:  translateY(-4px)  rotate(-0.1deg);
+    }
+}
+
+@keyframes text-fade-in{
+    0%{
+        width: 0;
+        background: #f6f6ff;
+    }
+    70%{
+        width: 500px;
+        background: #f6f6ff;
+    }
+    100%{
+        background: transparent;;
+        width: 500px;
+    }
+}

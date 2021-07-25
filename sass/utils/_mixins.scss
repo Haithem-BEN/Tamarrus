@@ -1,0 +1,37 @@
+// xsmal    0    ->  575  px
+// small    576  ->  767  px
+// meduim   768  ->  991  px
+// large    992  ->  1199 px
+// xLarge   1200 ->  1399 px
+// xLarge   1400 ->  +00  px
+
+
+// 
+
+$breakpoints-down:(
+    xlarge: '1399px',
+    large: '1199px',
+    meduim: '991px',
+    small: '767px',
+    xsmall: '575px'
+);
+$breakpoints-up:(
+    xxlarge: '1400px',
+    xlarge: '1200px',
+    large: '992px',
+    meduim: '768px',
+    small: '576px',
+);
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($map: $breakpoints-down, $key: $size)) {
+        @content;
+    }
+    
+}
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($map: $breakpoints-up, $key: $size) ) {
+        @content;
+    }
+}
