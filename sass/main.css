@@ -466,36 +466,19 @@ main section .sub-title {
   color: #ff5940;
   margin-bottom: 7px;
   font-weight: 400;
-  font-size: 1.7rem;
-}
-
-@media (max-width: 1199px) {
-  main section .sub-title {
-    font-size: 1.3rem;
-  }
+  font-size: 1.3rem;
 }
 
 main section .main-title {
-  margin-bottom: 30px;
   font-size: 3rem;
-}
-
-@media (max-width: 1199px) {
-  main section .main-title {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-  }
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 main section .description {
   color: #87878a;
   max-width: 460px;
-}
-
-@media (max-width: 1199px) {
-  main section .description {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 }
 
 main .features {
@@ -689,7 +672,7 @@ main .projects__header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 main .projects__cards {

@@ -96,25 +96,17 @@ main{
             color: #ff5940;
             margin-bottom: 7px;
             font-weight: 400;
-            font-size: 1.7rem;
-            @include breakpoint-down(large){
-                font-size: 1.3rem;
-            }
+            font-size: 1.3rem;
         }
         .main-title{
-            margin-bottom: 30px;
             font-size: 3rem;
-            @include breakpoint-down(large){
-                font-size: 2.5rem;
-                margin-bottom: 15px;
-            }
+            font-size: 2.5rem;
+            margin-bottom: 15px;
         }
         .description{
             color: #87878a;
             max-width: 460px;
-            @include breakpoint-down(large){
-                font-size: 1rem;
-            }
+            font-size: 1rem;
         }      
     }
     
@@ -124,9 +116,6 @@ main{
         padding: 10px;
         position: relative;
         top: -80px;
-
-
-      
 
         @include breakpoint-down(meduim){
             top: 0;
@@ -232,7 +221,7 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         &__cards{
             display: flex;
