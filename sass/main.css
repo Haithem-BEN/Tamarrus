@@ -688,7 +688,6 @@ main .projects__cards {
 
 main .projects__cards .card {
   width: 380px;
-  background: white;
   height: 450px;
   margin: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;
@@ -730,9 +729,6 @@ main .projects__cards .card {
   }
   main .projects__cards .card h4 {
     display: inline;
-  }
-  main .projects__cards .card.show-more {
-    height: 100px;
   }
 }
 
@@ -807,7 +803,97 @@ main .projects__cards .card__description {
   overflow: hidden;
 }
 
-main .projects__cards .show-more {
+@media (max-width: 767px) {
+  main .projects__cards .card.show-more {
+    max-height: 100px;
+  }
+}
+
+main .projects__cards .card.show-more .overlay {
+  background: #4b52e4;
+}
+
+main .snippets__header {
+  text-align: center;
+}
+
+main .snippets__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .snippets__cards .card {
+  width: 280px;
+  height: 320px;
+  margin: 15px;
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;
+          box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;
+}
+
+@media (max-width: 1399px) {
+  main .snippets__cards .card {
+    margin: 10px 5px;
+  }
+}
+
+@media (max-width: 1199px) {
+  main .snippets__cards .card:nth-child(6), main .snippets__cards .card:nth-child(7) {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  main .snippets__cards .card:nth-child(4), main .snippets__cards .card:nth-child(5) {
+    display: none;
+  }
+}
+
+main .snippets__cards .card__img {
+  width: 100%;
+  height: 260px;
+}
+
+main .snippets__cards .card__title {
+  height: 50px;
+  background: white;
+  font-size: 1rem;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .snippets__cards .show-more .overlay {
+  background: #ff5940;
+}
+
+@media (max-width: 575px) {
+  main .snippets__cards .show-more {
+    max-height: 100px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.show-more {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,28 +911,19 @@ main .projects__cards .show-more {
   background-position: top center;
 }
 
-main .projects__cards .show-more .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: #4b52e4;
-  opacity: 0.9;
-}
-
-main .projects__cards .show-more .content {
+.show-more .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 2;
 }
 
-main .projects__cards .show-more .content h3 {
+.show-more .content h3 {
   font-weight: 900;
   margin-left: 20px;
 }
 
-main .projects__cards .show-more .content i {
+.show-more .content i {
   font-size: 1.5rem;
   margin: 4px -1px;
 }
