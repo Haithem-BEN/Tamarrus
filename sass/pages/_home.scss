@@ -353,7 +353,7 @@ main{
                         display: none;
                     }
                 }
-                @include breakpoint-down(large){
+                @include breakpoint-down(meduim){
                     &:nth-child(4),&:nth-child(5){
                         display: none;
                     }

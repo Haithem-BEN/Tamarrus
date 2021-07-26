@@ -851,7 +851,7 @@ main .snippets__cards .card {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   main .snippets__cards .card:nth-child(4), main .snippets__cards .card:nth-child(5) {
     display: none;
   }
