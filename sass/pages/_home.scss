@@ -49,12 +49,12 @@ main{
             }
             @include breakpoint-down(meduim){
                 top: 160px;
-                max-width: 480px;
+                max-width: 500px;
                 text-align: center;
             }
             @include breakpoint-down(xsmall){
                 top: 130px;
-                max-width:324px;
+                max-width:336px;
             }
             h1{
                 font-size: 4.1rem;
@@ -146,6 +146,7 @@ main{
                 align-items: center;
                 text-align:center;
                 margin: 20px 0;
+                padding: 0 10px;
             }
             
             .btns{
@@ -218,13 +219,13 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         &__cards{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-
+            
             .card{
                 width: 380px;
                 // max-width: 380px !important;
@@ -242,10 +243,30 @@ main{
                 flex-wrap: wrap;
 
                 overflow: hidden;
+                
                 @include breakpoint-down(xlarge){
                     width: 359px;
+                };
+
+                @include breakpoint-down(large){
+                    &:nth-child(4),&:nth-child(5){
+                        display: none;
+                    }
                 }
-                
+                @include breakpoint-down(meduim){
+                    width: 329px;
+                    
+                }
+                @include breakpoint-down(small){
+                    width: 380px;
+                    h4{
+                        display: inline;
+                    }
+                    &.show-more{
+                        height: 100px;
+                    }
+                }
+
                 &__img{
                     align-self: center;
                     width: 100%;
@@ -299,7 +320,7 @@ main{
                 }
 
             }
-            .shom-more{
+            .show-more{
                 color: white;
                 display: flex;
                 justify-content: center;
