@@ -125,6 +125,9 @@ main{
         position: relative;
         top: -80px;
 
+
+      
+
         @include breakpoint-down(meduim){
             top: 0;
         }
@@ -214,6 +217,16 @@ main{
         }
     }
     .projects{
+        // background: url('../../images/random-shape.svg');
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: left top;
+        @include breakpoint-down(meduim){
+            background-size: 140px;
+        }
+        @include breakpoint-down(small){
+            background: none;
+        }
         &__header{
             text-align: center;
             display: flex;
@@ -229,6 +242,7 @@ main{
             .card{
                 width: 380px;
                 // max-width: 380px !important;
+                background: white ;
                 height: 450px;
                 margin: 15px;
                 box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;

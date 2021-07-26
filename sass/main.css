@@ -285,8 +285,6 @@ header .header__mobile {
   width: 100%;
   padding: 0 15px;
   background: white;
-  -webkit-box-shadow: inset 0 1px 5px #d1d2e8;
-          box-shadow: inset 0 1px 5px #d1d2e8;
   -webkit-transition: height 0.350s ease-in-out;
   transition: height 0.350s ease-in-out;
   overflow: hidden;
@@ -661,6 +659,24 @@ main .features__cards .card p {
   color: #87878a;
 }
 
+main .projects {
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: left top;
+}
+
+@media (max-width: 991px) {
+  main .projects {
+    background-size: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  main .projects {
+    background: none;
+  }
+}
+
 main .projects__header {
   text-align: center;
   display: -webkit-box;
@@ -689,6 +705,7 @@ main .projects__cards {
 
 main .projects__cards .card {
   width: 380px;
+  background: white;
   height: 450px;
   margin: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;
