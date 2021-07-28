@@ -16,11 +16,11 @@
 @keyframes text-fade-in{
     0%{
         width: 0;
-        background: #f6f6ff;
+        background: $white;
     }
     70%{
         width: 500px;
-        background: #f6f6ff;
+        background: $white;
     }
     100%{
         background: transparent;;

@@ -134,11 +134,11 @@ body {
 @-webkit-keyframes text-fade-in {
   0% {
     width: 0;
-    background: #f6f6ff;
+    background: #ffffff;
   }
   70% {
     width: 500px;
-    background: #f6f6ff;
+    background: #ffffff;
   }
   100% {
     background: transparent;
@@ -149,11 +149,11 @@ body {
 @keyframes text-fade-in {
   0% {
     width: 0;
-    background: #f6f6ff;
+    background: #ffffff;
   }
   70% {
     width: 500px;
-    background: #f6f6ff;
+    background: #ffffff;
   }
   100% {
     background: transparent;
@@ -171,6 +171,7 @@ body {
 }
 
 button, .button {
+  color: #4b52e4;
   padding: 6px 20px 10px;
   font-family: inherit;
   font-size: 15px;
@@ -335,7 +336,7 @@ button, .button {
 
 .small-card__title {
   height: 50px;
-  background: white;
+  background: #ffffff;
   font-size: 1rem;
   padding: 15px;
   display: -webkit-box;
@@ -369,13 +370,19 @@ header {
           transform: translateX(-50%);
 }
 
+@media (max-width: 767px) {
+  header {
+    background: #ffffff;
+  }
+}
+
 header.home-header .logo {
-  color: white;
+  color: #ffffff;
 }
 
 @media (max-width: 991px) {
   header.home-header .header__desktop {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -386,13 +393,7 @@ header a.logo {
 
 @media (max-width: 767px) {
   header a.logo {
-    color: black !important;
-  }
-}
-
-@media (max-width: 767px) {
-  header {
-    background: white;
+    color: #38383d;
   }
 }
 
@@ -406,7 +407,7 @@ header .btnHamburger span {
   display: block;
   height: 3px;
   width: 27px;
-  background: #000;
+  background: #38383d;
   border-radius: 3px;
 }
 
@@ -453,7 +454,7 @@ header .header__mobile {
   height: 0;
   width: 100%;
   padding: 0 15px;
-  background: white;
+  background: #ffffff;
   -webkit-transition: height 0.350s ease-in-out;
   transition: height 0.350s ease-in-out;
   overflow: hidden;
@@ -528,7 +529,7 @@ footer .shape-divider svg {
 }
 
 footer .shape-divider svg .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 footer .content {
@@ -546,7 +547,7 @@ footer .content {
       -ms-flex-align: center;
           align-items: center;
   height: 170px;
-  color: white;
+  color: #ffffff;
 }
 
 footer .content .footer-title {
@@ -612,7 +613,7 @@ main section .section__cards {
 }
 
 main section .section__cards .show-more {
-  color: white;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,7 +649,7 @@ main section .section__cards .show-more .content i {
 
 main .hero {
   height: 850px;
-  color: white;
+  color: #ffffff;
   background: url("../../images/bg-rev-1.svg");
   background-repeat: no-repeat;
   background-size: 1500px;
@@ -769,8 +770,8 @@ main .hero__text p {
 }
 
 main .hero__text .button {
-  background: #fff;
-  color: #544ae2;
+  background: #ffffff;
+  color: #4b52e4;
 }
 
 main .features {
