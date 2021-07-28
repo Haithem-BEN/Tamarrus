@@ -1,4 +1,25 @@
 main{
+    section {
+        margin-bottom: 100px;
+
+        .sub-title{
+            color: #ff5940;
+            margin-bottom: 7px;
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+        .main-title{
+            font-size: 3rem;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .description{
+            color: #87878a;
+            max-width: 460px;
+            font-size: 1rem;
+        }      
+    }
+
     .hero{
         height: 850px;
         color: white;
@@ -6,7 +27,7 @@ main{
         background-repeat: no-repeat;
         background-size: 1500px;
         background-position: 100% -1px;
-        
+        margin-bottom: 0 !important;
 
         @include breakpoint-down(xlarge){
             height: 700px;
@@ -90,43 +111,20 @@ main{
             }
         }
     }
-    section {
-        margin-bottom: 40px;
-        .sub-title{
-            color: #ff5940;
-            margin-bottom: 7px;
-            font-weight: 400;
-            font-size: 1.3rem;
-        }
-        .main-title{
-            font-size: 3rem;
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-        .description{
-            color: #87878a;
-            max-width: 460px;
-            font-size: 1rem;
-        }      
-    }
-    
+
+
     .features{
         display: flex;
         align-items: center;
         padding: 10px;
         position: relative;
-        top: -80px;
 
-        @include breakpoint-down(meduim){
-            top: 0;
-        }
         @include breakpoint-down(large){
             flex-direction: column;
         }
         
         &__header{
             flex: 1;
-            height: 450px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -329,7 +327,9 @@ main{
             }
         }
     }
+
     .snippets{
+        
         &__header{
             text-align: center;
         }
@@ -337,14 +337,15 @@ main{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-
             .card{
                 width: 280px;
                 height: 320px;
                 margin: 15px;
                 position: relative;
                 border-radius: 7px;
-                
+                overflow: hidden;
+                box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;
+
                 @include breakpoint-down(xlarge){
                     margin: 10px 5px;
                 }
@@ -358,9 +359,6 @@ main{
                         display: none;
                     }
                 }
-                
-                overflow: hidden;
-                box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;
                 &__img{
                     width: 100%;
                     height: 260px;
@@ -385,6 +383,7 @@ main{
         }
     }
 }
+
 .overlay{
     position: absolute;
     width: 100%;

@@ -332,6 +332,60 @@ header .header__mobile .nav-items .nav-item a {
   font-weight: 600;
 }
 
+footer {
+  height: 400px;
+  position: relative;
+  background: #4b52e4;
+}
+
+footer .custom-shape-divider-top-1627318042 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  height: 83px;
+}
+
+footer .custom-shape-divider-top-1627318042 svg {
+  position: relative;
+  display: block;
+  width: calc(190% + 1.3px);
+  height: 148px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+footer .custom-shape-divider-top-1627318042 .shape-fill {
+  fill: #FFFFFF;
+}
+
+main section {
+  margin-bottom: 100px;
+}
+
+main section .sub-title {
+  color: #ff5940;
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+main section .main-title {
+  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+main section .description {
+  color: #87878a;
+  max-width: 460px;
+  font-size: 1rem;
+}
+
 main .hero {
   height: 850px;
   color: white;
@@ -339,6 +393,7 @@ main .hero {
   background-repeat: no-repeat;
   background-size: 1500px;
   background-position: 100% -1px;
+  margin-bottom: 0 !important;
 }
 
 @media (max-width: 1399px) {
@@ -458,29 +513,6 @@ main .hero__text .button {
   color: #544ae2;
 }
 
-main section {
-  margin-bottom: 40px;
-}
-
-main section .sub-title {
-  color: #ff5940;
-  margin-bottom: 7px;
-  font-weight: 400;
-  font-size: 1.3rem;
-}
-
-main section .main-title {
-  font-size: 3rem;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-main section .description {
-  color: #87878a;
-  max-width: 460px;
-  font-size: 1rem;
-}
-
 main .features {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,13 +522,6 @@ main .features {
           align-items: center;
   padding: 10px;
   position: relative;
-  top: -80px;
-}
-
-@media (max-width: 991px) {
-  main .features {
-    top: 0;
-  }
 }
 
 @media (max-width: 1199px) {
@@ -512,7 +537,6 @@ main .features__header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
