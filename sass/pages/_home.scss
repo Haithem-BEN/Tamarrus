@@ -1,23 +1,58 @@
 main{
+
     section {
         margin-bottom: 100px;
-
-        .sub-title{
-            color: #ff5940;
-            margin-bottom: 7px;
-            font-weight: 400;
-            font-size: 1.3rem;
+        .section__header{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            .sub-title{
+                color: #ff5940;
+                font-size: 1.3rem;
+                font-weight: 400;
+                margin-bottom: 7px;
+            }
+            .main-title{
+                font-size: 3rem;
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+            }
+            .description{
+                max-width: 460px;
+                color: #87878a;
+                font-size: 1rem;
+            }
         }
-        .main-title{
-            font-size: 3rem;
-            font-size: 2.5rem;
-            margin-bottom: 15px;
+        .section__cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .show-more{
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background: url("../../images/show-more-bg.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top center;
+                .content{
+                    display: flex;
+                    z-index: 2;
+                    h3{
+                        font-weight: 900;
+                        margin-left: 20px;
+                    }
+                    i{
+                        font-size: 1.5rem;
+                        margin: 4px -1px;
+                    }
+                }
+            }
         }
-        .description{
-            color: #87878a;
-            max-width: 460px;
-            font-size: 1rem;
-        }      
     }
 
     .hero{
@@ -28,7 +63,6 @@ main{
         background-size: 1500px;
         background-position: 100% -1px;
         margin-bottom: 0 !important;
-
         @include breakpoint-down(xlarge){
             height: 700px;
             background-size: 1280px;
@@ -43,7 +77,6 @@ main{
             height: 510px;
             background-position: 100% -536px;
         }
-        
         &__img{
             overflow: hidden;
             img{
@@ -90,7 +123,6 @@ main{
                 font-size: 2.4rem;
                 font-weight: 100;
                 margin-bottom: 10px;
-
                 @include breakpoint-down(xsmall){
                     font-size: 1.65rem;
                 }
@@ -99,70 +131,54 @@ main{
                 max-width: 470px;
                 margin-bottom: 35px;
                 line-height: 1.45rem;
-
                 @include breakpoint-down(xsmall){
                     font-size: 1rem;
                 }
             }
             .button{
-                // min-width: 100%;
                 background: #fff ;
                 color: #544ae2;
             }
         }
     }
-
-
     .features{
         display: flex;
         align-items: center;
         padding: 10px;
         position: relative;
-
         @include breakpoint-down(large){
             flex-direction: column;
         }
-        
-        &__header{
+        &__header.section__header{
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
             text-align: left;
-            padding: 0 30px;
-
+            padding: 0 10px;
             @include breakpoint-down(large){
                 align-items: center;
-                text-align:center;
+                text-align: center;
                 margin: 20px 0;
-                padding: 0 10px;
             }
-            
-            .btns{
+            .button{
+                background-color: #eeeff1;
+                color: #38383d;
                 margin-top: 30px;
                 @include breakpoint-down(large){
                     display: none;
                 }
-                .button{
-                    width: max-content;
-                    background-color: #38383d;
-                    color: #fff;
-                }
             }
         }
         &__cards{
-            height: auto;
-            flex: 1;
-            padding: 0 30px;
-
             display: flex;
-            flex-wrap: wrap;
+            flex: 1;
             justify-content: start;
+            flex-wrap: wrap;
             align-content: baseline;
-
+            padding: 0 30px;
             overflow: hidden;
-
             @include breakpoint-down(meduim){
                 justify-content: center;
             }
@@ -174,21 +190,17 @@ main{
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-
                 max-width: 200px;
                 margin: 15px;
-
                 @include breakpoint-down(large){
-                    // max-width: 191px;
                     align-items: center;
-                    text-align: center;
                     margin: 15px 10px;
+                    text-align: center;
                 }
                 @include breakpoint-down(xsmall){
                     max-width: 250px;
                 }
                 i{
-                    color: #4b52e4;
                     color: #ff5940;
                     font-size: 2.3rem ;
                     margin-bottom: 12px;
@@ -197,222 +209,20 @@ main{
                     margin-bottom: 10px;
                 }
                 p{
-                    font-size: 1rem;
                     color: #87878a;
+                    font-size: 1rem;
                 }
             }
         }
     }
     .projects{
-        // background: url('../../images/random-shape.svg');
-        background-repeat: no-repeat;
-        background-size: 200px;
-        background-position: left top;
-        @include breakpoint-down(meduim){
-            background-size: 140px;
-        }
-        @include breakpoint-down(small){
-            background: none;
-        }
-        &__header{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
         &__cards{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            .card{
-                width: 380px;
-                // max-width: 380px !important;
-                // background: white ;
-                height: 450px;
-                margin: 15px;
-                box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;
-                // box-shadow: rgba(17, 12, 46, 0.15) 0px 10px 30px 0px;
-                // box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-                // box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-                // box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-                
-                border-radius: 10px;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-
-                overflow: hidden;
-                
-                @include breakpoint-down(xlarge){
-                    width: 359px;
-                };
-
-                @include breakpoint-down(large){
-                    &:nth-child(4),&:nth-child(5){
-                        display: none;
-                    }
-                }
-                @include breakpoint-down(meduim){
-                    width: 329px;
-                    
-                }
-                @include breakpoint-down(small){
-                    width: 380px;
-                    h4{
-                        display: inline;
-                    }
-                }
-
-                &__img{
-                    align-self: center;
-                    width: 100%;
-                    margin-bottom: 10px;
-                }
-                &__content{
-                    padding: 5px 15px;
-                    .project-details{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        font-size: 0.9rem;
-                        font-weight: 700;
-                        margin-bottom: 15px;
-                        .languages-list{
-                            display: flex;
-                            li{
-                                margin: 0 5px;
-                            }
-                            .html{
-                                color: #ff5940;
-                            }
-                            .css{
-                                color: #3678e0;
-                            }
-                            .js{
-                                color: #f59d15;
-                            }
-                            .react{
-                                color: #59cdee;
-                            }
-                        }
-                        .lvl{
-                            font-weight: 700;
-                            // background: #ff5940;
-                            color: #ff5940;
-                            padding: 5px 10px;
-                            // border: solid 1px #ff5940;
-                            border-radius: 15px;
-                        }
-                    }
-                }
-                &__title{
-                    margin-bottom: 15px;
-                    font-size: 1.3rem;
-                }
-                &__description{
-                    height: 60px;
-                    font-size: 1rem;
-                    overflow: hidden;
-                }
-            }
-            .card.show-more{
-                @include breakpoint-down(small){
-                    max-height: 100px ;
-                }
-                .overlay{
-                    background: #4b52e4;
-                }
-            }
-        }
+            .show-more{ .overlay{ background: #4b52e4; } }
+        }    
     }
-
     .snippets{
-        
-        &__header{
-            text-align: center;
-        }
         &__cards{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            .card{
-                width: 280px;
-                height: 320px;
-                margin: 15px;
-                position: relative;
-                border-radius: 7px;
-                overflow: hidden;
-                box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 10px;
-
-                @include breakpoint-down(xlarge){
-                    margin: 10px 5px;
-                }
-                @include breakpoint-down(large){
-                    &:nth-child(6),&:nth-child(7){
-                        display: none;
-                    }
-                }
-                @include breakpoint-down(meduim){
-                    &:nth-child(4),&:nth-child(5){
-                        display: none;
-                    }
-                }
-                &__img{
-                    width: 100%;
-                    height: 260px;
-                }
-                &__title{
-                    height: 50px;
-                    background: white;
-                    font-size: 1rem;
-                    padding: 15px;
-                    display: flex;
-                    align-items: center;
-                }
-            }
-            .show-more{
-                .overlay{
-                    background: #ff5940;
-                }
-                @include breakpoint-down(xsmall){
-                    max-height: 100px ;
-                }
-            }
-        }
-    }
-}
-
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.85;
-}
-
-.show-more{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background: url("../../images/show-more-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center ;
-
-    .content{
-        display: flex;
-        z-index: 2;
-        h3{
-            font-weight: 900;
-            margin-left: 20px;
-        }
-        i{
-            font-size: 1.5rem;
-            margin: 4px -1px;
+            .show-more{ .overlay{ background: #ff5940; } }
         }
     }
 }

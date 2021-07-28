@@ -8,7 +8,10 @@
 @import './base/animation';
 
 // Components 
-@import './components/buttons';
+@import './components/overlay';
+@import './components/button';
+@import './components/big-card';
+@import './components/small-card.scss';
 
 // Layouts
 @import './layouts/header';
