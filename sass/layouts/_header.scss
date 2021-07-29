@@ -3,16 +3,13 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
     @include breakpoint-down(small){
         background: $white;
     }
-
     &.home-header{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         .logo{
             color: $white;
         }

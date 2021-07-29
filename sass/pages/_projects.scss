@@ -1,1 +1,31 @@
 // Projects Page
+.projects {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $gray;
+        li{
+            padding: 10px;
+            &:not(:last-child){
+                margin-left: 5px;
+            }
+        }
+        .lvl{
+            display: flex;
+        }
+        
+        .difficulty{
+            display: flex;
+        }
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

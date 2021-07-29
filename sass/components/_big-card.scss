@@ -3,7 +3,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 380px;
-    padding-bottom: 15px ;
+    padding-bottom: 5px;
     margin: 15px;
     overflow: hidden;
     border-radius: 10px;
@@ -36,7 +36,7 @@
             align-items: center;
             font-size: 0.9rem;
             font-weight: 700;
-            margin-bottom: 15px;
+            margin-bottom: 9px;
             .languages-list{
                 display: flex;
                 li{ margin: 0 5px;}
@@ -53,12 +53,12 @@
         }
     }
     &__title{
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         font-size: 1.3rem;
     }
     &__description{
         height: 60px;
-        font-size: 1rem;
+        font-size: 0.9rem;
         overflow: hidden;
     }
     &.big-card.show-more{
