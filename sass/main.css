@@ -940,9 +940,16 @@ main .snippets__cards .show-more .overlay {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #87878a;
+  -webkit-box-shadow: rgba(24, 24, 26, 0.09) 0px 3px 15px;
+          box-shadow: rgba(24, 24, 26, 0.09) 0px 3px 15px;
+  border: 1px solid rgba(24, 24, 26, 0.09);
+  max-width: 800px;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .projects nav li {
@@ -951,6 +958,10 @@ main .snippets__cards .show-more .overlay {
 
 .projects nav li:not(:last-child) {
   margin-left: 5px;
+}
+
+.projects nav li input, .projects nav li label {
+  cursor: pointer;
 }
 
 .projects nav .lvl {

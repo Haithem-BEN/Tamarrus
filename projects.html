@@ -52,16 +52,36 @@
 <!--  -->
     <main class="projects">
         <nav class="container">
-            <ul class="lvl">
-                <li>مبتدأ</li>
-                <li>متوسط</li>
-                <li>متقدم</li>
-            </ul>
-            <ul class="difficulty">
-                <li>الأسهل</li>
-                <li>الأصعب</li>
-            </ul>
+            <form action="/">
+                <ul class="lvl">
+                    <li>
+                        <input type="radio" id="biggner" name="lvl" value="biggner">
+                        <label for="biggner">مبتدأ</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mid" name="lvl" value="mid">
+                        <label for="mid">متوسط</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="adv" name="lvl" value="adv">
+                        <label for="adv">متقدم</label>
+                    </li>
+                </ul>
+            </form>
+            <form action="/">
+                <ul class="difficulty">
+                    <li>
+                        <input type="radio" id="easiest" name="difficulty" value="easiest">
+                        <label for="easiest">الأسهل</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="hardest" name="difficulty" value="hardest">
+                        <label for="hardest">الأصعب</label>
+                    </li>
+                </ul>
+            </form>
         </nav>
+
         <section class="container">
             <div class="card big-card">
                 <img src="./images/proj-imgs/proj4.webp" alt="" class="big-card__img">
