@@ -626,7 +626,7 @@ main section .section__cards .show-more {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background: url("../../images/show-more-bg.png");
+  background: url("../images/show-more-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -652,7 +652,7 @@ main section .section__cards .show-more .content i {
 main .hero {
   height: 850px;
   color: #ffffff;
-  background: url("../../images/bg-rev-1.svg");
+  background: url("../images/bg-rev-1.svg");
   background-repeat: no-repeat;
   background-size: 1500px;
   background-position: 100% -1px;
